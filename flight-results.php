@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
   
-<!-- Mirrored from remtsoy.com/tf_templates/tf-bookify-demo/flight-results-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 15:56:09 GMT -->
 <head>
-    <title>Travel Mate - Flight results 2</title>
+    <title>Green Aviation</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
