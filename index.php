@@ -16,11 +16,14 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border" id="main-nav">
+  <nav
+    class="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border"
+    id="main-nav">
     <div class="container">
       <div class="navbar-inner nav">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" data-target="#navbar-main" data-toggle="collapse" type="button" area-expanded="false">
+          <button class="navbar-toggle collapsed" data-target="#navbar-main" data-toggle="collapse" type="button"
+            area-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -33,15 +36,18 @@
         <div class="collapse navbar-collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li class="active dropdown">
-              <a class="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flights</a>
+              <a class="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">Flights</a>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+              <a class="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">Contact Us</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
                 <span class="_desk-h">Currency</span>
                 <b>USD</b>
               </a>
@@ -61,7 +67,8 @@
               </div>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
                 <span class="_desk-h">Language</span>
                 <img class="navbar-flag" src="img/flags/USA.png" alt="Image Alternative text" title="Image Title" />
               </a>
@@ -112,73 +119,77 @@
                 </div>
                 <div class="theme-search-area-form" id="hero-search-form">
                   <div class="row" data-gutter="none">
-                    <form action="results.php" method="post">
-                      <div class="col-md-5">
-                        <div class="row" data-gutter="none">
-                          <div class="col-md-6">
-                            <div class="theme-search-area-section first theme-search-area-section-curved">
-                              <div class="theme-search-area-section-inner">
-                                <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                                <input class="theme-search-area-section-input typeahead" type="text" placeholder="გამგზავრება" data-provide="typeahead" name="departure" />
-                              </div>
+                    <div class="col-md-5">
+                      <div class="row" data-gutter="none">
+                        <div class="col-md-6">
+                          <div class="theme-search-area-section first theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                              <input class="theme-search-area-section-input typeahead" type="text"
+                                placeholder="გამგზავრება" data-provide="typeahead" />
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="theme-search-area-section theme-search-area-section-curved">
-                              <div class="theme-search-area-section-inner">
-                                <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                                <input class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა" data-provide="typeahead" />
-                              </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="theme-search-area-section theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-location-pin"></i>
+                              <input class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა"
+                                data-provide="typeahead" />
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="row" data-gutter="none">
-                          <div class="col-md-6">
-                            <div class="theme-search-area-section theme-search-area-section-curved">
-                              <div class="theme-search-area-section-inner">
-                                <i class="theme-search-area-section-icon lin lin-calendar"></i>
-                                <input class="theme-search-area-section-input datePickerEnd _mob-h" value="Mon 07/02" type="text" placeholder="Check-out" />
-                                <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-07-02" type="date" />
-                              </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row" data-gutter="none">
+                        <div class="col-md-6">
+                          <div class="theme-search-area-section theme-search-area-section-curved">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                              <input class="theme-search-area-section-input datePickerEnd _mob-h" value="Mon 07/02"
+                                type="text" placeholder="Check-out" />
+                              <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-07-02"
+                                type="date" />
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="theme-search-area-section theme-search-area-section-curved quantity-selector" data-increment="მგზავრი">
-                              <div class="theme-search-area-section-inner">
-                                <i class="theme-search-area-section-icon lin lin-people"></i>
-                                <input class="theme-search-area-section-input" value="1 მგზავრი" type="text" />
-                                <div class="quantity-selector-box" id="FlySearchPassengers">
-                                  <div class="quantity-selector-inner">
-                                    <p class="quantity-selector-title">
-                                      მგზავრი
-                                    </p>
-                                    <ul class="quantity-selector-controls">
-                                      <li class="quantity-selector-decrement">
-                                        <a href="#">&#45;</a>
-                                      </li>
-                                      <li class="quantity-selector-current">
-                                        1
-                                      </li>
-                                      <li class="quantity-selector-increment">
-                                        <a href="#">&#43;</a>
-                                      </li>
-                                    </ul>
-                                  </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="theme-search-area-section theme-search-area-section-curved quantity-selector"
+                            data-increment="მგზავრი">
+                            <div class="theme-search-area-section-inner">
+                              <i class="theme-search-area-section-icon lin lin-people"></i>
+                              <input class="theme-search-area-section-input" value="1 მგზავრი" type="text" />
+                              <div class="quantity-selector-box" id="FlySearchPassengers">
+                                <div class="quantity-selector-inner">
+                                  <p class="quantity-selector-title">
+                                    მგზავრები
+                                  </p>
+                                  <ul class="quantity-selector-controls">
+                                    <li class="quantity-selector-decrement">
+                                      <a href="#">&#45;</a>
+                                    </li>
+                                    <li class="quantity-selector-current">
+                                      1
+                                    </li>
+                                    <li class="quantity-selector-increment">
+                                      <a href="#">&#43;</a>
+                                    </li>
+                                  </ul>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-1">
-                        <button class="theme-search-area-submit _mt-0 theme-search-area-submit-glow theme-search-area-submit-curved">
-                          <i class="theme-search-area-submit-icon fa fa-angle-right"></i>
-                          <span class="_desk-h" onclick="dzebna()">ძებნა</span>
-                        </button>
-                      </div>
-                    </form>
+                    </div>
+                    <div class="col-md-1">
+                      <button
+                        class="theme-search-area-submit _mt-0 theme-search-area-submit-glow theme-search-area-submit-curved">
+                        <i class="theme-search-area-submit-icon fa fa-angle-right"></i>
+                        <span class="_desk-h" onclick="myfunction()">ძებნა</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -186,9 +197,10 @@
                 <div class="row row-col-mob-gap">
                   <div class="col-md-4">
                     <div class="feature">
-                      <i class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
+                      <i
+                        class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">აღმოაჩინე მსოფლიო</h5>
+                        <h5 class="feature-title">Explore the World</h5>
                         <p class="feature-subtitle _op-04">
                           Start to discrover. We will help you to visit any
                           place you can imagine
@@ -198,9 +210,10 @@
                   </div>
                   <div class="col-md-4">
                     <div class="feature">
-                      <i class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
+                      <i
+                        class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">იმოგზაურე და დააგროვე ქულები</h5>
+                        <h5 class="feature-title">Gifts & Rewards</h5>
                         <p class="feature-subtitle _op-04">
                           Get even more from our service. Spend less and
                           travel more
@@ -210,9 +223,10 @@
                   </div>
                   <div class="col-md-4">
                     <div class="feature">
-                      <i class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
+                      <i
+                        class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">საუკეთესო ფასები</h5>
+                        <h5 class="feature-title">Best prices</h5>
                         <p class="feature-subtitle _op-04">
                           We are comparing hundreds travel websites to find
                           best price for you
