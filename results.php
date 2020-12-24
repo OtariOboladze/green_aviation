@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
 <body>
+  <?php echo $_POST["departure"]?>
     <nav
     class="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border"
     id="main-nav">
