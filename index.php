@@ -122,7 +122,7 @@
                             <div class="theme-search-area-section first theme-search-area-section-curved">
                               <div class="theme-search-area-section-inner">
                                 <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="გამგზავრება" data-provide="typeahead" name="departure">
+                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="გამგზავრება" data-provide="typeahead" name="departure" name="departure">
                                   <option value="" disabled selected>გამგზავრება</option>
                                   <option> sdgsdf </option>
                                   <option> sifusdfgsfgsdfghaspf </option>
@@ -137,13 +137,13 @@
                             <div class="theme-search-area-section theme-search-area-section-curved">
                               <div class="theme-search-area-section-inner">
                                 <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა" data-provide="typeahead" name="arrival" />
-                                <option value="" disabled selected>ჩასვლა</option>
-                                <option> sdgsdf </option>
-                                <option> sifusdfgsfgsdfghaspf </option>
-                                <option> sdfgsfgsf </option>
-                                <option> sifusfgsdfgsfgsdfhaspf </option>
-                                <option> sifuhsdfgsdfgsgsdfgsdfgsdgfsfaspf </option>
+                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა" data-provide="typeahead" name="arrival" name="arrival">
+                                  <option value="" disabled selected>ჩასვლა</option>
+                                  <option> sdgsdf </option>
+                                  <option> sifusdfgsfgsdfghaspf </option>
+                                  <option> sdfgsfgsf </option>
+                                  <option> sifusfgsdfgsfgsdfhaspf </option>
+                                  <option> sifuhsdfgsdfgsgsdfgsdfgsdgfsfaspf </option>
                                 </select>
                               </div>
                             </div>

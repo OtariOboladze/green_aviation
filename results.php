@@ -1,6 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="en">
   
+<?php
+echo $_POST["departure"];
+echo "<br/>";
+echo $_POST["arrival"];
+?>
+
 <head>
     <title>Green Aviation</title>
     <meta charset="UTF-8"/>
