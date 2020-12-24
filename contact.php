@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
   
-<!-- Mirrored from remtsoy.com/tf_templates/tf-bookify-demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 15:39:08 GMT -->
 <head>
     <title>Travel Mate - Contact</title>
     <meta charset="UTF-8"/>
