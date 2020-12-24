@@ -200,7 +200,7 @@
                       <i
                         class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">Explore the World</h5>
+                        <h5 class="feature-title">აღმოაჩინე მსოფლიოს ახალი ქალაქები</h5>
                         <p class="feature-subtitle _op-04">
                           Start to discrover. We will help you to visit any
                           place you can imagine
@@ -213,7 +213,7 @@
                       <i
                         class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">Gifts & Rewards</h5>
+                        <h5 class="feature-title">საჩუქრები და დაგროვებული ქულები</h5>
                         <p class="feature-subtitle _op-04">
                           Get even more from our service. Spend less and
                           travel more
@@ -226,7 +226,7 @@
                       <i
                         class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">Best prices</h5>
+                        <h5 class="feature-title">საუკეთესო ფასები</h5>
                         <p class="feature-subtitle _op-04">
                           We are comparing hundreds travel websites to find
                           best price for you
