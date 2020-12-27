@@ -33,16 +33,16 @@
         <div class="collapse navbar-collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li class="active dropdown">
-              <a class="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flights</a>
+              <a class="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ფრენები</a>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+              <a class="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">დაგვიკავშირდით</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="_desk-h">Currency</span>
+                <span class="_desk-h">ვალუტა</span>
                 <b>USD</b>
               </a>
               <div class="dropdown-menu dropdown-menu-l">
@@ -65,7 +65,7 @@
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="_desk-h">Language</span>
+                <span class="_desk-h">ენა</span>
                 <img class="navbar-flag" src="img/flags/USA.png" alt="Image Alternative text" title="Image Title" />
               </a>
               <div class="dropdown-menu dropdown-menu-l">
@@ -207,8 +207,7 @@
                       <div class="feature-caption _c-w">
                         <h5 class="feature-title">აღმოაჩინე მსოფლიო</h5>
                         <p class="feature-subtitle _op-04">
-                          Start to discrover. We will help you to visit any
-                          place you can imagine
+                          ფრენები ასზე მეტი დანიშნულების ადგილისკენ
                         </p>
                       </div>
                     </div>
@@ -217,10 +216,9 @@
                     <div class="feature">
                       <i class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">იმოგზაურე და დააგროვე ქულები</h5>
+                        <h5 class="feature-title">დააგროვე ქულები</h5>
                         <p class="feature-subtitle _op-04">
-                          Get even more from our service. Spend less and
-                          travel more
+                          თითოეული ფრენა დაამატებს ახალ ქულებს მომხმარებლის პროფილზე
                         </p>
                       </div>
                     </div>
@@ -229,10 +227,9 @@
                     <div class="feature">
                       <i class="feature-icon feature-icon-white feature-icon-box feature-icon-round feature-icon-xs fa fa-check"></i>
                       <div class="feature-caption _c-w">
-                        <h5 class="feature-title">საუკეთესო ფასები</h5>
+                        <h5 class="feature-title">დაზოგე თანხა</h5>
                         <p class="feature-subtitle _op-04">
-                          We are comparing hundreds travel websites to find
-                          best price for you
+                          გამოიყენე ბაზარზე არსებული საუკეთესო ფასების შემოთავაზება
                         </p>
                       </div>
                     </div>
@@ -250,10 +247,10 @@
           <div class="col-md-6">
             <ul class="theme-footer-abs-nav">
               <li>
-                <a href="about-us.html">About Us</a>
+                <a href="about-us.html">ჩვენს შესახებ</a>
               </li>
               <li>
-                <a href="contact.html">Terms and conditions</a>
+                <a href="contact.html">გამოყენების წინაპირობები</a>
               </li>
             </ul>
             <p class="theme-footer-abs-copyright">
@@ -268,12 +265,6 @@
               <li>
                 <a class="fa fa-twitter" href="#"></a>
               </li>
-              <!-- <li>
-                  <a class="fa fa-google" href="#"></a>
-                </li>
-                <li>
-                  <a class="fa fa-instagram" href="#"></a>
-                </li> -->
             </ul>
           </div>
         </div>
