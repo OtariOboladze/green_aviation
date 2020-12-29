@@ -112,8 +112,8 @@
             <div class="col-md-10 col-md-offset-1">
               <div class="theme-search-area _mob-h theme-search-area-white theme-search-area-stacked">
                 <div class="theme-search-area-header _ta-c">
-                  <h1 class="theme-search-area-title theme-search-area-title-sm">10 ფრენა ლონდონისკენ</h1>
-                  <p class="theme-search-area-subtitle">შეგიძლია მოძებნო ან შეცვალო არსებული ფრენა</p>
+                  <h1 class="theme-search-area-title theme-search-area-title-sm">10 ფრენა <?php echo $_POST['departure']?>სკენ</h1>
+                  <p class="theme-search-area-subtitle">შეგიძლია აირჩიო ან შეცვალო არჩეული ფრენა</p>
                 </div>
                 <div class="theme-search-area-form" id="hero-search-form">
                   <div class="row" data-gutter="none">
@@ -123,7 +123,7 @@
                           <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-sm">
                             <div class="theme-search-area-section-inner">
                               <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                              <input class="theme-search-area-section-input typeahead" value="New York, United States" type="text" placeholder="Departure" data-provide="typeahead"/>
+                              <input class="theme-search-area-section-input typeahead" value="<?php echo $_POST['departure']?>" type="text" placeholder="Departure" data-provide="typeahead"/>
                             </div>
                           </div>
                         </div>
@@ -131,7 +131,7 @@
                           <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-sm">
                             <div class="theme-search-area-section-inner">
                               <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                              <input class="theme-search-area-section-input typeahead" value="London, United Kindom" type="text" placeholder="Arrival" data-provide="typeahead"/>
+                              <input class="theme-search-area-section-input typeahead" value="<?php echo $_POST['arrival']?>" type="text" placeholder="Arrival" data-provide="typeahead"/>
                             </div>
                           </div>
                         </div>
@@ -214,7 +214,7 @@
                         <label class="theme-search-area-section-label">From</label>
                         <div class="theme-search-area-section-inner">
                           <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                          <input class="theme-search-area-section-input typeahead" value="New York" type="text" placeholder="Departure" data-provide="typeahead"/>
+                          <input class="theme-search-area-section-input typeahead" value="<?php echo $_POST['departure']?>" type="text" placeholder="Departure" data-provide="typeahead"/>
                         </div>
                       </div>
                       <div class="theme-search-area-section theme-search-area-section-curved">
@@ -285,7 +285,7 @@
               <div class="theme-search-results-sidebar">
                 <div class="theme-search-results-sidebar-sections _mb-20 _br-2 theme-search-results-sidebar-sections-white">
                   <div class="theme-search-results-sidebar-section">
-                    <h5 class="theme-search-results-sidebar-section-title">London Airport</h5>
+                    <h5 class="theme-search-results-sidebar-section-title"><?php echo $_POST['departure']?> Airport</h5>
                     <div class="theme-search-results-sidebar-section-checkbox-list">
                       <div class="theme-search-results-sidebar-section-checkbox-list-items">
                         <div class="checkbox theme-search-results-sidebar-section-checkbox-list-item">
@@ -327,7 +327,7 @@
                     </div>
                   </div>
                   <div class="theme-search-results-sidebar-section">
-                    <h5 class="theme-search-results-sidebar-section-title">New York Airport</h5>
+                    <h5 class="theme-search-results-sidebar-section-title"><?php echo $_POST['arrival']?></h5>
                     <div class="theme-search-results-sidebar-section-checkbox-list">
                       <div class="theme-search-results-sidebar-section-checkbox-list-items">
                         <div class="checkbox theme-search-results-sidebar-section-checkbox-list-item">
@@ -402,7 +402,7 @@
                                       <p class="theme-search-results-item-flight-section-meta-time">01:40
                                         <span>pm</span>
                                       </p>
-                                      <p class="theme-search-results-item-flight-section-meta-city">London</p>
+                                      <p class="theme-search-results-item-flight-section-meta-city"><?php echo $_POST['departure']?></p>
                                       <p class="theme-search-results-item-flight-section-meta-date">May 17, 2018</p>
                                     </div>
                                   </div>
@@ -439,7 +439,7 @@
                                       <p class="theme-search-results-item-flight-section-meta-time">12:50
                                         <span>am</span>
                                       </p>
-                                      <p class="theme-search-results-item-flight-section-meta-city">New York</p>
+                                      <p class="theme-search-results-item-flight-section-meta-city"><?php echo $_POST['arrival']?></p>
                                       <p class="theme-search-results-item-flight-section-meta-date">May 18, 2018</p>
                                     </div>
                                   </div>
@@ -473,7 +473,7 @@
                               <div class="theme-search-results-item-flight-details-info">
                                 <h5 class="theme-search-results-item-flight-details-info-title">Depart</h5>
                                 <p class="theme-search-results-item-flight-details-info-date">Tue, May 17</p>
-                                <p class="theme-search-results-item-flight-details-info-cities">London &rarr; New York</p>
+                                <p class="theme-search-results-item-flight-details-info-cities"><?php echo $_POST['departure']?> &rarr; New York</p>
                                 <p class="theme-search-results-item-flight-details-info-fly-time">23h 10m</p>
                                 <p class="theme-search-results-item-flight-details-info-stops">2 stops</p>
                               </div>
@@ -500,7 +500,7 @@
                                         <p class="theme-search-results-item-flight-details-schedule-destination-title">
                                           <b>LTN</b>Luton
                                         </p>
-                                        <p class="theme-search-results-item-flight-details-schedule-destination-city">London</p>
+                                        <p class="theme-search-results-item-flight-details-schedule-destination-city"><?php echo $_POST['departure']?></p>
                                       </div>
                                       <div class="theme-search-results-item-flight-details-schedule-destination-separator">
                                         <span>&rarr;</span>

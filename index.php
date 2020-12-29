@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+require 'db.php';
+?>
 
 <head>
   <title>Green Aviation</title>
@@ -26,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
           </a>
         </div>
@@ -122,13 +125,15 @@
                             <div class="theme-search-area-section first theme-search-area-section-curved">
                               <div class="theme-search-area-section-inner">
                                 <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="გამგზავრება" data-provide="typeahead" name="departure" name="departure">
+                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="გამგზავრება" data-provide="typeahead" name="departure">
                                   <option value="" disabled selected>გამგზავრება</option>
-                                  <option> sdgsdf </option>
-                                  <option> sifusdfgsfgsdfghaspf </option>
-                                  <option> sdfgsfgsf </option>
-                                  <option> sifusfgsdfgsfgsdfhaspf </option>
-                                  <option> sifuhsdfgsdfgsgsdfgsdfgsdgfsfaspf </option>
+                                  <?php
+                                  $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT departure_city FROM flights");
+                                  $qalaqebis_array = mysqli_fetch_all($qalaqebis_result);
+                                  foreach ($qalaqebis_array as $qalaqi) {
+                                    echo '<option>' . $qalaqi[key($qalaqebis_array)] . '</option>';
+                                  }
+                                  ?>
                                 </select>
                               </div>
                             </div>
@@ -139,11 +144,13 @@
                                 <i class="theme-search-area-section-icon lin lin-location-pin"></i>
                                 <select class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა" data-provide="typeahead" name="arrival" name="arrival">
                                   <option value="" disabled selected>ჩასვლა</option>
-                                  <option> sdgsdf </option>
-                                  <option> sifusdfgsfgsdfghaspf </option>
-                                  <option> sdfgsfgsf </option>
-                                  <option> sifusfgsdfgsfgsdfhaspf </option>
-                                  <option> sifuhsdfgsdfgsgsdfgsdfgsdgfsfaspf </option>
+                                  <?php
+                                  $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT arrival_city FROM flights");
+                                  $qalaqebis_array = mysqli_fetch_all($qalaqebis_result);
+                                  foreach ($qalaqebis_array as $qalaqi) {
+                                    echo '<option>' . $qalaqi[key($qalaqebis_array)] . '</option>';
+                                  }
+                                  ?>
                                 </select>
                               </div>
                             </div>
