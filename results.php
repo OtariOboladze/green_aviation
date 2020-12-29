@@ -2,9 +2,7 @@
 <html lang="en">
   
 <?php
-// echo $_POST["departure"];
-// echo "<br/>";
-// echo $_POST["arrival"];
+require 'db.php';
 ?>
 
 <head>
@@ -33,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
           </a>
         </div>
@@ -113,7 +111,7 @@
               <div class="theme-search-area _mob-h theme-search-area-white theme-search-area-stacked">
                 <div class="theme-search-area-header _ta-c">
                   <h1 class="theme-search-area-title theme-search-area-title-sm">10 ფრენა <?php echo $_POST['departure']?>სკენ</h1>
-                  <p class="theme-search-area-subtitle">შეგიძლია აირჩიო ან შეცვალო არჩეული ფრენა</p>
+                  <p class="theme-search-area-subtitle">შეგიძლია შეცვალო ან აირჩიო ახალი ფრენა</p>
                 </div>
                 <div class="theme-search-area-form" id="hero-search-form">
                   <div class="row" data-gutter="none">
@@ -123,7 +121,18 @@
                           <div class="theme-search-area-section first theme-search-area-section-curved theme-search-area-section-sm">
                             <div class="theme-search-area-section-inner">
                               <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                              <input class="theme-search-area-section-input typeahead" value="<?php echo $_POST['departure']?>" type="text" placeholder="Departure" data-provide="typeahead"/>
+                              <select class="theme-search-area-section-input typeahead" type="text" data-provide="typeahead" name="departure">
+                                  <option value="" selected><?php echo $_POST['departure']?></option>
+                                  <?php
+                                  $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT departure_city FROM flights");
+                                  $qalaqebis_array = mysqli_fetch_all($qalaqebis_result);
+                                  foreach ($qalaqebis_array as $qalaqi) {
+                                    if ($qalaqi[key($qalaqebis_array)] != $_POST['departure']) {                                    
+                                    echo '<option>' . $qalaqi[key($qalaqebis_array)] . '</option>';
+                                  }
+                                }
+                                  ?>
+                                </select>
                             </div>
                           </div>
                         </div>
@@ -131,7 +140,18 @@
                           <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-sm">
                             <div class="theme-search-area-section-inner">
                               <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                              <input class="theme-search-area-section-input typeahead" value="<?php echo $_POST['arrival']?>" type="text" placeholder="Arrival" data-provide="typeahead"/>
+                              <select class="theme-search-area-section-input typeahead" type="text" data-provide="typeahead" name="arrival">
+                                  <option value="" selected><?php echo $_POST['arrival']?></option>
+                                  <?php
+                                  $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT arrival_city FROM flights");
+                                  $qalaqebis_array = mysqli_fetch_all($qalaqebis_result);
+                                  foreach ($qalaqebis_array as $qalaqi) {
+                                    if ($qalaqi[key($qalaqebis_array)] != $_POST['arrival']) {                                    
+                                    echo '<option>' . $qalaqi[key($qalaqebis_array)] . '</option>';
+                                  }
+                                }
+                                  ?>
+                                </select>
                             </div>
                           </div>
                         </div>
@@ -187,41 +207,55 @@
                   </div>
                 </div>
                 <div class="theme-search-area-options theme-search-area-options-center theme-search-area-options-dot-primary-inverse clearfix">
-                  <div class="btn-group theme-search-area-options-list" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                      <input type="radio" name="flight-options" id="flight-option-1" checked/>Round Trip
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="flight-options" id="flight-option-2"/>One Way
-                    </label>
-                  </div>
                 </div>
               </div>
               <div class="theme-search-area-inline _desk-h theme-search-area-inline-white">
-                <h4 class="theme-search-area-inline-title">Lodon Flights</h4>
-                <p class="theme-search-area-inline-details">June 27 &rarr; July 02, 1 Passnger</p>
+                <h4 class="theme-search-area-inline-title"><?php echo $_POST['departure']?></h4>
+                <p class="theme-search-area-inline-details">June 27 &rarr; July 02, 1 მგზავრი</p>
                 <a class="theme-search-area-inline-link magnific-inline" href="#searchEditModal">
-                  <i class="fa fa-pencil"></i>Edit
+                  <i class="fa fa-pencil"></i>შეცვლა
                 </a>
                 <div class="magnific-popup magnific-popup-sm mfp-hide" id="searchEditModal">
                   <div class="theme-search-area theme-search-area-vert">
                     <div class="theme-search-area-header">
-                      <h1 class="theme-search-area-title theme-search-area-title-sm">Edit your Search</h1>
-                      <p class="theme-search-area-subtitle">Prices might be different from current results</p>
+                      <h1 class="theme-search-area-title theme-search-area-title-sm">შეცვალე ფრენის დეტალები</h1>
+                      <p class="theme-search-area-subtitle">აირჩიე ახალი მონაცემები</p>
                     </div>
                     <div class="theme-search-area-form">
                       <div class="theme-search-area-section first theme-search-area-section-curved">
                         <label class="theme-search-area-section-label">From</label>
                         <div class="theme-search-area-section-inner">
                           <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                          <input class="theme-search-area-section-input typeahead" value="<?php echo $_POST['departure']?>" type="text" placeholder="Departure" data-provide="typeahead"/>
+                          <select class="theme-search-area-section-input typeahead" type="text" data-provide="typeahead" name="departure">
+                                  <option value="" selected><?php echo $_POST['departure']?></option>
+                                  <?php
+                                  $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT departure_city FROM flights");
+                                  $qalaqebis_array = mysqli_fetch_all($qalaqebis_result);
+                                  foreach ($qalaqebis_array as $qalaqi) {
+                                    if ($qalaqi[key($qalaqebis_array)] != $_POST['departure']) {                                    
+                                    echo '<option>' . $qalaqi[key($qalaqebis_array)] . '</option>';
+                                  }
+                                }
+                                  ?>
+                                </select>
                         </div>
                       </div>
                       <div class="theme-search-area-section theme-search-area-section-curved">
                         <label class="theme-search-area-section-label">To</label>
                         <div class="theme-search-area-section-inner">
                           <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                          <input class="theme-search-area-section-input typeahead" type="text" placeholder="Arrival" data-provide="typeahead"/>
+                          <select class="theme-search-area-section-input typeahead" type="text" data-provide="typeahead" name="arrival">
+                                  <option value="" selected><?php echo $_POST['arrival']?></option>
+                                  <?php
+                                  $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT arrival_city FROM flights");
+                                  $qalaqebis_array = mysqli_fetch_all($qalaqebis_result);
+                                  foreach ($qalaqebis_array as $qalaqi) {
+                                    if ($qalaqi[key($qalaqebis_array)] != $_POST['arrival']) {                                    
+                                    echo '<option>' . $qalaqi[key($qalaqebis_array)] . '</option>';
+                                  }
+                                }
+                                  ?>
+                                </select>
                         </div>
                       </div>
                       <div class="row" data-gutter="10">
@@ -447,7 +481,7 @@
                               </div>
                             </div>
                           </div>
-                          <h5 class="theme-search-results-item-flight-section-airline-title">Operated by Virgin Atlantic Airways</h5>
+                          <h5 class="theme-search-results-item-flight-section-airline-title">ფრენას ასრულებს კომპანია: <?php echo $operated_by_company?></h5>
                         </div>
                       </div>
                     </div>

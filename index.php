@@ -142,7 +142,7 @@ require 'db.php';
                             <div class="theme-search-area-section theme-search-area-section-curved">
                               <div class="theme-search-area-section-inner">
                                 <i class="theme-search-area-section-icon lin lin-location-pin"></i>
-                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა" data-provide="typeahead" name="arrival" name="arrival">
+                                <select class="theme-search-area-section-input typeahead" type="text" placeholder="ჩასვლა" data-provide="typeahead" name="arrival">
                                   <option value="" disabled selected>ჩასვლა</option>
                                   <?php
                                   $qalaqebis_result = mysqli_query($con, "SELECT DISTINCT arrival_city FROM flights");
