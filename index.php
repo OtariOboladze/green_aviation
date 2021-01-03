@@ -113,7 +113,7 @@ require 'db.php';
                 <div class="theme-search-area-header _mb-20">
                   <h1 class="theme-search-area-title">Green Aviation</h1>
                   <p class="theme-search-area-subtitle">
-                    აირჩიეთ სასურველი ფრენა
+                    აირჩიე სასურველი ფრენა
                   </p>
                 </div>
                 <form action="results.php" method="post">
@@ -249,33 +249,7 @@ require 'db.php';
       </div>
     </div>
     <div class="theme-footer-abs">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="theme-footer-abs-nav">
-              <li>
-                <a href="about-us.html">ჩვენს შესახებ</a>
-              </li>
-              <li>
-                <a href="contact.html">გამოყენების წინაპირობები</a>
-              </li>
-            </ul>
-            <p class="theme-footer-abs-copyright">
-              Copyright &copy; 2020 Green Aviation. All rights reserved.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <ul class="theme-social-list theme-footer-abs-social">
-              <li>
-                <a class="fa fa-facebook" href="#"></a>
-              </li>
-              <li>
-                <a class="fa fa-twitter" href="#"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <?php echo readfile('footer_manu.php') ?> </div>
     </div>
   </div>
   <script src="js/jquery.js"></script>
