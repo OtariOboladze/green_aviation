@@ -570,7 +570,7 @@ require 'db.php';
     </div>
   </div>
   <div class="theme-copyright">
-    <?php echo readfile('footer_manu.php') ?> </div>
+    <?php echo readfile('footer_menu.php') ?> 
   </div>
 
   <script src="js/jquery.js"></script>
